@@ -1,0 +1,374 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9EEA33FF1E68554200F55743 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EEA33FE1E68554200F55743 /* AppDelegate.m */; };
+		9EEA34021E68554200F55743 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EEA34011E68554200F55743 /* main.m */; };
+		9EEA34051E68554200F55743 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EEA34041E68554200F55743 /* ViewController.m */; };
+		9EEA34071E68554200F55743 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9EEA34061E68554200F55743 /* Assets.xcassets */; };
+		9EEA340A1E68554200F55743 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9EEA34081E68554200F55743 /* Main.storyboard */; };
+		9EEA34301E6871DA00F55743 /* SimpleImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EEA342F1E6871DA00F55743 /* SimpleImageView.m */; };
+		9EEA34351E6872FB00F55743 /* StackView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9EEA34341E6872FB00F55743 /* StackView.xib */; };
+		9EEA34371E68A47F00F55743 /* stackView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EEA34361E68A47F00F55743 /* stackView.m */; };
+		9EEA343A1E68D12D00F55743 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9EEA34391E68D12D00F55743 /* OpenGL.framework */; };
+		9EEA343C1E68D13C00F55743 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9EEA343B1E68D13C00F55743 /* Cocoa.framework */; };
+		9EEA34461E68DA5000F55743 /* Syphon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9EEA34451E68DA5000F55743 /* Syphon.framework */; };
+		9EEA34471E68DA5000F55743 /* Syphon.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9EEA34451E68DA5000F55743 /* Syphon.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9EEA344A1E6A0BC300F55743 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9EEA34491E6A0BC300F55743 /* AppKit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		9EEA34481E68DA5000F55743 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				9EEA34471E68DA5000F55743 /* Syphon.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		9EEA33FA1E68554200F55743 /* SyphonMixer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SyphonMixer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9EEA33FD1E68554200F55743 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		9EEA33FE1E68554200F55743 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		9EEA34011E68554200F55743 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9EEA34031E68554200F55743 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		9EEA34041E68554200F55743 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		9EEA34061E68554200F55743 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9EEA34091E68554200F55743 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9EEA340B1E68554200F55743 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9EEA342E1E6871DA00F55743 /* SimpleImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleImageView.h; sourceTree = "<group>"; };
+		9EEA342F1E6871DA00F55743 /* SimpleImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleImageView.m; sourceTree = "<group>"; };
+		9EEA34341E6872FB00F55743 /* StackView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StackView.xib; sourceTree = "<group>"; };
+		9EEA34361E68A47F00F55743 /* stackView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = stackView.m; sourceTree = "<group>"; };
+		9EEA34381E68A49D00F55743 /* stackView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = stackView.h; sourceTree = "<group>"; };
+		9EEA34391E68D12D00F55743 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		9EEA343B1E68D13C00F55743 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		9EEA34451E68DA5000F55743 /* Syphon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Syphon.framework; path = ../../../Framework/Syphon.framework; sourceTree = "<group>"; };
+		9EEA34491E6A0BC300F55743 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9EEA33F71E68554200F55743 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9EEA344A1E6A0BC300F55743 /* AppKit.framework in Frameworks */,
+				9EEA343C1E68D13C00F55743 /* Cocoa.framework in Frameworks */,
+				9EEA34461E68DA5000F55743 /* Syphon.framework in Frameworks */,
+				9EEA343A1E68D12D00F55743 /* OpenGL.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9EEA33F11E68554200F55743 = {
+			isa = PBXGroup;
+			children = (
+				9EEA34451E68DA5000F55743 /* Syphon.framework */,
+				9EEA33FC1E68554200F55743 /* SyphonMixer */,
+				9EEA33FB1E68554200F55743 /* Products */,
+				9EEA34311E6872A700F55743 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		9EEA33FB1E68554200F55743 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9EEA33FA1E68554200F55743 /* SyphonMixer.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9EEA33FC1E68554200F55743 /* SyphonMixer */ = {
+			isa = PBXGroup;
+			children = (
+				9EEA33FD1E68554200F55743 /* AppDelegate.h */,
+				9EEA33FE1E68554200F55743 /* AppDelegate.m */,
+				9EEA34031E68554200F55743 /* ViewController.h */,
+				9EEA34041E68554200F55743 /* ViewController.m */,
+				9EEA34081E68554200F55743 /* Main.storyboard */,
+				9EEA34341E6872FB00F55743 /* StackView.xib */,
+				9EEA34381E68A49D00F55743 /* stackView.h */,
+				9EEA34361E68A47F00F55743 /* stackView.m */,
+				9EEA34061E68554200F55743 /* Assets.xcassets */,
+				9EEA340B1E68554200F55743 /* Info.plist */,
+				9EEA342E1E6871DA00F55743 /* SimpleImageView.h */,
+				9EEA342F1E6871DA00F55743 /* SimpleImageView.m */,
+				9EEA34001E68554200F55743 /* Supporting Files */,
+			);
+			path = SyphonMixer;
+			sourceTree = "<group>";
+		};
+		9EEA34001E68554200F55743 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9EEA34011E68554200F55743 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9EEA34311E6872A700F55743 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9EEA34491E6A0BC300F55743 /* AppKit.framework */,
+				9EEA343B1E68D13C00F55743 /* Cocoa.framework */,
+				9EEA34391E68D12D00F55743 /* OpenGL.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9EEA33F91E68554200F55743 /* SyphonMixer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9EEA34241E68554200F55743 /* Build configuration list for PBXNativeTarget "SyphonMixer" */;
+			buildPhases = (
+				9EEA33F61E68554200F55743 /* Sources */,
+				9EEA33F71E68554200F55743 /* Frameworks */,
+				9EEA33F81E68554200F55743 /* Resources */,
+				9EEA34481E68DA5000F55743 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SyphonMixer;
+			productName = SyphonMixer;
+			productReference = 9EEA33FA1E68554200F55743 /* SyphonMixer.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9EEA33F21E68554200F55743 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Narumi Inada";
+				TargetAttributes = {
+					9EEA33F91E68554200F55743 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 9EEA33F51E68554200F55743 /* Build configuration list for PBXProject "SyphonMixer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9EEA33F11E68554200F55743;
+			productRefGroup = 9EEA33FB1E68554200F55743 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9EEA33F91E68554200F55743 /* SyphonMixer */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9EEA33F81E68554200F55743 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9EEA34071E68554200F55743 /* Assets.xcassets in Resources */,
+				9EEA340A1E68554200F55743 /* Main.storyboard in Resources */,
+				9EEA34351E6872FB00F55743 /* StackView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9EEA33F61E68554200F55743 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9EEA34301E6871DA00F55743 /* SimpleImageView.m in Sources */,
+				9EEA34051E68554200F55743 /* ViewController.m in Sources */,
+				9EEA34371E68A47F00F55743 /* stackView.m in Sources */,
+				9EEA34021E68554200F55743 /* main.m in Sources */,
+				9EEA33FF1E68554200F55743 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		9EEA34081E68554200F55743 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9EEA34091E68554200F55743 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9EEA34221E68554200F55743 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		9EEA34231E68554200F55743 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		9EEA34251E68554200F55743 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"\"$(SRCROOT)/../../../Framework\"",
+				);
+				INFOPLIST_FILE = SyphonMixer/Info.plist;
+				INSTALL_PATH = "@rpath";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks/";
+				PRODUCT_BUNDLE_IDENTIFIER = "Tune-Up.SyphonMixer";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		9EEA34261E68554200F55743 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"\"$(SRCROOT)/../../../Framework\"",
+				);
+				INFOPLIST_FILE = SyphonMixer/Info.plist;
+				INSTALL_PATH = "@rpath";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks/";
+				PRODUCT_BUNDLE_IDENTIFIER = "Tune-Up.SyphonMixer";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9EEA33F51E68554200F55743 /* Build configuration list for PBXProject "SyphonMixer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9EEA34221E68554200F55743 /* Debug */,
+				9EEA34231E68554200F55743 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9EEA34241E68554200F55743 /* Build configuration list for PBXNativeTarget "SyphonMixer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9EEA34251E68554200F55743 /* Debug */,
+				9EEA34261E68554200F55743 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9EEA33F21E68554200F55743 /* Project object */;
+}

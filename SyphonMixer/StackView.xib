@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="12118" systemVersion="16D32" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="12118"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="stackView">
+            <connections>
+                <outlet property="alphaControlBar" destination="NNr-BY-wC0" id="UM8-lc-dx6"/>
+                <outlet property="blendingPopup" destination="nUQ-BT-jmp" id="kFL-m6-LLl"/>
+                <outlet property="infoLabel" destination="9Ec-j0-6L4" id="75T-kY-MaS"/>
+                <outlet property="simpleView" destination="qsf-vr-sFp" id="qYn-lK-SyH"/>
+                <outlet property="view" destination="c22-O7-iKe" id="Jz9-3W-nSO"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView canDrawConcurrently="YES" id="c22-O7-iKe">
+            <rect key="frame" x="0.0" y="0.0" width="400" height="60"/>
+            <autoresizingMask key="autoresizingMask" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <openGLView canDrawConcurrently="YES" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" useAuxiliaryDepthBufferStencil="NO" allowOffline="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qsf-vr-sFp" customClass="SimpleImageView">
+                    <rect key="frame" x="0.0" y="0.0" width="107" height="60"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="qsf-vr-sFp" secondAttribute="height" multiplier="16:9" id="dnz-Er-mcE"/>
+                        <constraint firstAttribute="height" constant="60" id="pKs-JF-QVI"/>
+                    </constraints>
+                </openGLView>
+                <slider verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="NNr-BY-wC0">
+                    <rect key="frame" x="115" y="8" width="137" height="19"/>
+                    <sliderCell key="cell" continuous="YES" state="on" alignment="left" maxValue="1" tickMarkPosition="above" sliderType="linear" id="aNA-Fc-KxN"/>
+                    <connections>
+                        <action selector="alphaControl:" target="-2" id="Jy5-0k-Lum"/>
+                    </connections>
+                </slider>
+                <popUpButton verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="nUQ-BT-jmp">
+                    <rect key="frame" x="268" y="4" width="115" height="26"/>
+                    <popUpButtonCell key="cell" type="push" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" id="opZ-Ns-lap">
+                        <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="menu"/>
+                        <menu key="menu" id="zLf-Ry-TQu"/>
+                    </popUpButtonCell>
+                </popUpButton>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Ec-j0-6L4">
+                    <rect key="frame" x="125" y="35" width="272" height="20"/>
+                    <textFieldCell key="cell" sendsActionOnEndEditing="YES" id="bew-jv-OLo">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+            </subviews>
+            <constraints>
+                <constraint firstItem="9Ec-j0-6L4" firstAttribute="leading" secondItem="qsf-vr-sFp" secondAttribute="trailing" constant="20" id="1Tj-X8-ASd"/>
+                <constraint firstAttribute="trailing" secondItem="9Ec-j0-6L4" secondAttribute="trailing" constant="5" id="1tH-5h-Trg"/>
+                <constraint firstItem="9Ec-j0-6L4" firstAttribute="top" secondItem="c22-O7-iKe" secondAttribute="top" constant="5" id="2z4-hO-76F"/>
+                <constraint firstItem="qsf-vr-sFp" firstAttribute="top" secondItem="c22-O7-iKe" secondAttribute="top" id="3Ya-Fj-6Fu"/>
+                <constraint firstItem="nUQ-BT-jmp" firstAttribute="leading" secondItem="NNr-BY-wC0" secondAttribute="trailing" constant="20" id="5Jm-V9-AET"/>
+                <constraint firstAttribute="height" secondItem="9Ec-j0-6L4" secondAttribute="height" multiplier="3" id="MjR-7k-cY5"/>
+                <constraint firstAttribute="bottom" secondItem="NNr-BY-wC0" secondAttribute="bottom" constant="10" id="SuN-2U-HtD"/>
+                <constraint firstAttribute="trailing" secondItem="nUQ-BT-jmp" secondAttribute="trailing" constant="20" id="bcs-h1-ght"/>
+                <constraint firstItem="qsf-vr-sFp" firstAttribute="height" secondItem="c22-O7-iKe" secondAttribute="height" id="bmw-9M-KKK"/>
+                <constraint firstAttribute="width" secondItem="NNr-BY-wC0" secondAttribute="width" multiplier="3" id="eVo-cH-Rec"/>
+                <constraint firstAttribute="bottom" secondItem="qsf-vr-sFp" secondAttribute="bottom" id="lFC-05-Ts4"/>
+                <constraint firstItem="qsf-vr-sFp" firstAttribute="leading" secondItem="c22-O7-iKe" secondAttribute="leading" id="lwe-E7-9B7"/>
+                <constraint firstItem="NNr-BY-wC0" firstAttribute="leading" secondItem="qsf-vr-sFp" secondAttribute="trailing" constant="10" id="m5o-Y6-HUB"/>
+                <constraint firstItem="nUQ-BT-jmp" firstAttribute="centerY" secondItem="NNr-BY-wC0" secondAttribute="centerY" id="whj-c0-MhQ"/>
+            </constraints>
+            <point key="canvasLocation" x="190" y="81"/>
+        </customView>
+    </objects>
+</document>
