@@ -1,7 +1,7 @@
 # SyphonMixer
 
 Syphonのマルチサーバをミックス後再度パブリッシュするためのアプリです。
-To inmix multi syphon server and republish.
+To　republish　mixed multi syphon servers.
 
 Syphon Framework and Implementations License:
 
